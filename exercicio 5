@@ -1,0 +1,12 @@
+sexo = str(input("Digite seu sexo (M/F): ").upper())
+salario = float(input("Digite seu salário: "))
+if sexo == "M":
+    desconto = 5
+    diferença = (salario - desconto) / 100
+    novo_salario = salario - diferença
+    print("Em um salário de {} o valor do desconto é igual a {} , Resultando um novo salário de R$ {}" .format(salario,diferença,novo_salario))
+else:
+    desconto = 3
+    diferença = (salario - desconto) / 100
+    novo_salario = salario - diferença
+    print("Em um salário de {} o valor do desconto é igual a {} , Resultando um novo salário de R$ {}" .format(salario,diferença,novo_salario))
