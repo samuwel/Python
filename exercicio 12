@@ -1,0 +1,8 @@
+salbruto=int(input("Informe o salário bruto, sem usar ponto ou vírgula: R$ "))
+inss=(salbruto-10)/100
+ir=(salbruto-25)/100
+sindicato=(salbruto-0.5)/100
+desc=inss+ir+sindicato
+salliquido=salbruto-inss-ir-sindicato
+print("O salário bruto informado foi de R$ {:.2f} reais, com um total de descontos de R$ {} reais. \nTendo por fim o salário líquido a receber de R$ {:.2f} reais.".format(salbruto,desc,salliquido))
+print("Os descontos em cima do salário bruto foi de: R$ {:.2f} reais do INSS, R$ {:.2f} reais do IR e R$ {:.2f} reais do sindicato".format(inss,ir,sindicato))
