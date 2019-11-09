@@ -1,0 +1,21 @@
+cachorro = 100
+hamburguer = 101
+cheeseburguer = 102
+refrigerante = 103
+pedido = int(input('Codigo do pedido: '))
+quantidade = int(input('Quantidade do pedido: '))
+
+if pedido == 100:
+    preço = quantidade * 5.20
+    print(quantidade, 'cachorro quente, RS', preço)
+elif pedido == 101:
+    preço2 = quantidade * 5.20
+    print(quantidade, 'hamburguer, R$', preço2)
+elif pedido == 102:
+    preço3 = quantidade * 7.30
+    print(quantidade, 'cheeseburguer, R$', preço3)
+elif pedido == 103:
+    preço4 = quantidade * 5.00
+    print(quantidade, 'refrigerante, R$', preço4)
+else:
+    print('pedido invalido')
