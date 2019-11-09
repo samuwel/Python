@@ -1,0 +1,11 @@
+cc = int(input('informe o conteúdo de carbono:'))
+dr = int(input('informe a dureza do rokweell:'))
+rt = float(input('informe a resistência a tração:'))
+if cc < 7 and dr > 50 and rt > 80.000:
+    print('passou nos 3 testes, grau 10')
+elif cc < 7 and dr > 50 and rt < 80.000:
+    print('passou no teste 1 e 2, grau 9')
+elif cc < 7 and dr < 50 and rt < 80.000:
+    print('passou no teste 1, grau 8')
+else:
+    print("não passou em nenhum teste, grau 7")
