@@ -1,0 +1,12 @@
+sm = float(input("Saldo disponível: "))
+credito1 = sm * (20/100)
+credito2 = sm * (30/100)
+credito3 = sm * (40/100)
+if sm <= 200:
+    print("Com o saldo médio de R${} você não recebe créditos" .format(sm))
+elif sm >= 201 and sm <= 400:
+    print("Com o saldo médio de R${} o seu limite de crédito é de R${}" .format(sm, credito1))
+elif sm >= 401 and sm <= 600:
+    print("Com o saldo médio de R${} o seu limite de crédito é de R${}" .format(sm, credito2))
+else:
+    print("Com o saldo médio de R${} o seu limite de crédito é de R${}" .format(sm, credito3))
