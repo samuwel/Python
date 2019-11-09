@@ -1,0 +1,9 @@
+kmlitros=12
+tempogasto=int(input("Informe o tempo gasto na viagem em horas: "))
+velocidade=int(input("Informe a velocidade média durante o percurso em km/h: "))
+distancia=tempogasto*velocidade
+consumo=distancia/12
+print("A velocidade foi de {}km/h".format(velocidade))
+print("O tempo gasto na viagem foi de {} horas".format(tempogasto))
+print("A distância percorrida foi de {}km".format(distancia))
+print("O consumo total de combustível foi de {:.1f}L".format(consumo))
