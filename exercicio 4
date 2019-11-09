@@ -1,0 +1,8 @@
+semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+while True:
+    entrada = int(input('Digite um número de 1 à 7 ou 0 para sair: '))
+    if entrada < 1 or entrada > 7:
+        print("Você digiou um número inválido, inicie novamente.")
+        break
+    else:
+        print(semana[entrada-1])
