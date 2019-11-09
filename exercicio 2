@@ -1,0 +1,27 @@
+sexo = 'Sexo'
+aluno = 0
+m = 0
+f = 0
+a = 0
+r = 0
+print('quando acabarem os alunos digite "Fim" no campo (Sexo).')
+while sexo != 'FIM':
+    sexo = input( 'Qual o sexo do aluno? [M/F]: ').upper()
+    if sexo == 'FIM':
+        break
+    if sexo == 'M':
+        m += 1
+    else:
+        f += 1
+    n = input('Insira se ele foi aprovado ou reprovado [A/R]: ')
+    if n == 'A':
+        a += 1
+    else:
+        r += 1
+    aluno += 1
+
+pm = m * 100 / aluno
+pf = 100 - pm
+pa = a * 100 / aluno
+
+print('Dos {} alunos inseridos {:.0f}% eram meninas 
