@@ -1,0 +1,17 @@
+sm=int(input('informe seu salário:R$ '))
+if sm<2000:
+    cinco=sm * 0.05
+    scinco=sm+cinco
+    print('Com salário de R${} você terá um acréscimo de R${} e um total líquido deR${}'.format(sm,cinco,scinco))
+elif sm<2500:
+    dez=sm * 0.010
+    sdez=sm+dez
+    print('Com salário de R${} você terá um acréscimo de R${} e um total líquido de{}'.format(sm,dez,sdez))
+elif sm<3000:
+    quinze=sm * 0.015
+    squinze=sm+quinze
+    print('Com salário de R${} você terá um acréscimo de R${} e um total líquido de R${}'.format(sm,quinze,squinze))
+else:
+    vinte=sm * 0.020
+    svinte=sm+vinte
+    print('Com salário de {} você terá um acréscimo de R$ {} e um total líquido de R${}'.format(sm,vinte,svinte))
