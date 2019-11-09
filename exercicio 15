@@ -1,0 +1,17 @@
+play1 = int(input("Digite 1 para tesoura, 2 para pedra ou 3 para papel. Escolha apenas um dos três números:"))
+play2=int(input("Digite 1 para tesoura, 2 para pedra ou 3 para papel. Escolha apenas um dos três números:"))
+if play1==1 and play2==2:
+    print("O player 2 venceu, pois pedra quebra tesoura")
+elif play1==1 and play2==3:
+    print("O player 1 venceu, pois tesoura corta papel")
+elif play1==2 and play2==1:
+    print("O player 1 venceu, pois pedra quebra tesoura")
+elif play1==2 and play2==3:
+    print("O player 2 venceu, pois papel engole a pedra")
+elif play1==3 and play2==1:
+    print("O player 2 venceu, pois tesoura corta papel")
+elif play1==3 and play2==2:
+    print("O player 1 venceu, pois papel engole a pedra")
+else:
+    play1==1 and play2==1 and play1==2 and play2==2 and play1==3 and play2==3
+    print("Houve um empate, tente novamente!")
